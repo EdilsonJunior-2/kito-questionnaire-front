@@ -4,7 +4,7 @@ import Question from "../classes/question";
 import QuestionnaireList from "../classes/questionnaireList";
 
 const api = axios.create({
-  baseURL: "http://localhost:5000",
+  baseURL: import.meta.env.BACKEND_URL || "http://localhost:5000",
 });
 
 const createQuestion = (q: Questionnaire): Promise<boolean> =>
