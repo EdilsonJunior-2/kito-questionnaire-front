@@ -25,19 +25,7 @@ export default (props: { open: boolean; close: () => void }) => {
 			questions: [
 				{
 					text: "",
-					options: [{ value: "" }, { value: "" }],
-					answer: undefined,
-					rating: undefined,
-				},
-				{
-					text: "",
-					options: [{ value: "" }, { value: "" }],
-					answer: undefined,
-					rating: undefined,
-				},
-				{
-					text: "",
-					options: [{ value: "" }, { value: "" }],
+					options: [{ value: "" }, { value: "" }, { value: "" }],
 					answer: undefined,
 					rating: undefined,
 				},

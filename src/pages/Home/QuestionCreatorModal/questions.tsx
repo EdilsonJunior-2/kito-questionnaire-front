@@ -19,7 +19,7 @@ export default ({
 		control,
 		name: "questions",
 		rules: {
-			minLength: 3,
+			minLength: 1,
 		},
 	});
 
@@ -29,7 +29,7 @@ export default ({
 				...getValues().questions,
 				{
 					text: "",
-					options: [{ value: "" }, { value: "" }],
+					options: [{ value: "" }, { value: "" }, { value: "" }],
 					answer: undefined,
 					rating: undefined,
 				},
@@ -42,7 +42,7 @@ export default ({
 				return (
 					<StyledQuestionSection key={question.id}>
 						<div className="title">
-							{questionIndex > 2 && (
+							{questionIndex > 0 && (
 								<DeleteOutlineIcon onClick={() => remove(questionIndex)} />
 							)}
 							<h4>Question</h4>

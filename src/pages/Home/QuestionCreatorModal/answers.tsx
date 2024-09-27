@@ -10,7 +10,7 @@ export default ({ questionIndex, control, register, errors }: any) => {
 		control,
 		name: `questions[${questionIndex}].options`,
 		rules: {
-			minLength: 2,
+			minLength: 3,
 		},
 	});
 
@@ -51,7 +51,7 @@ export default ({ questionIndex, control, register, errors }: any) => {
 								</InputBox>
 							}
 						/>
-						{index > 1 && <DeleteOutlineIcon onClick={() => remove(index)} />}
+						{index > 2 && <DeleteOutlineIcon onClick={() => remove(index)} />}
 					</div>
 				);
 			})}
